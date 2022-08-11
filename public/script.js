@@ -3,7 +3,7 @@ const videoGrid = document.getElementById('video-grid')
 const myPeer = new Peer(undefined, {
   path: '/peerjs',
   host: '/',
-  port: '443'
+  port: '3001'
 })
 let myVideoStream;
 const myVideo = document.createElement('video')
@@ -106,7 +106,7 @@ const setMuteButton = () => {
     <i class="fas fa-microphone"></i>
     <span>Mute</span>
   `
-  document.querySelector('.main__mute_button').innerHTML = html;
+  document.querySelector('.main__mute__button').innerHTML = html;
 }
 
 const setUnmuteButton = () => {
@@ -114,7 +114,7 @@ const setUnmuteButton = () => {
     <i class="unmute fas fa-microphone-slash"></i>
     <span>Unmute</span>
   `
-  document.querySelector('.main__mute_button').innerHTML = html;
+  document.querySelector('.main__mute__button').innerHTML = html;
 }
 
 const setStopVideo = () => {
@@ -122,7 +122,7 @@ const setStopVideo = () => {
     <i class="fas fa-video"></i>
     <span>Stop Video</span>
   `
-  document.querySelector('.main__video_button').innerHTML = html;
+  document.querySelector('.main__video__button').innerHTML = html;
 }
 
 const setPlayVideo = () => {
@@ -130,5 +130,5 @@ const setPlayVideo = () => {
   <i class="stop fas fa-video-slash"></i>
     <span>Play Video</span>
   `
-  document.querySelector('.main__video_button').innerHTML = html;
+  document.querySelector('.main__video__button').innerHTML = html;
 }
